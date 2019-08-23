@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import java.text.DecimalFormat;
@@ -36,5 +37,14 @@ public class MainActivity extends AppCompatActivity {
         // set the text for the answer
         textView4.setText("Tip: $" + f.format(tipAmount));
         textView5.setText("Total: $" + f.format(total));
+    }
+
+    public void ratingBar(View v){
+        RatingBar ratingbar = (RatingBar) findViewById(R.id.ratingBar);
+        EditText editText2 = (EditText) findViewById(R.id.editText2);
+
+        String rating = String.valueOf(ratingbar.getRating());
+
+
     }
 }
