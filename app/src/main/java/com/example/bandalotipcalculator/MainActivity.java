@@ -39,12 +39,4 @@ public class MainActivity extends AppCompatActivity {
         textView5.setText("Total: $" + f.format(total));
     }
 
-    public void ratingBar(View v){
-        RatingBar ratingbar = (RatingBar) findViewById(R.id.ratingBar);
-        EditText editText2 = (EditText) findViewById(R.id.editText2);
-
-        String rating = String.valueOf(ratingbar.getRating());
-
-
-    }
 }
